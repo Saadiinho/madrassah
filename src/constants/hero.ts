@@ -1,12 +1,12 @@
 export const HERO_CONTENT = {
-    badge: 'Apprenez. Progressez. Réussissez.',
+    badge: 'Apprenez. Progressez. Transmettez.',
 
-    title: 'Développez vos compétences.',
+    title: 'Apprenez le Coran',
 
-    titleHighlight: 'Construisez votre avenir.',
+    titleHighlight: 'à votre rythme.',
 
     description:
-        'Accédez à des cours en ligne conçus pour vous permettre d’apprendre à votre rythme et de développer des compétences qui comptent vraiment.',
+        'Des cours en ligne adaptés aux enfants, aux adolescents et aux adultes pour apprendre le Coran et découvrir les bases de la jurisprudence, avec deux cours par semaine.',
 
     primaryAction: {
         label: 'Découvrir les cours',
@@ -19,7 +19,7 @@ export const HERO_CONTENT = {
     },
 
     benefits: [
-        'Apprentissage à votre rythme',
-        'Accès aux cours en ligne',
+        '2 cours en ligne par semaine',
+        'Des niveaux adaptés à chaque âge',
     ],
 } as const
