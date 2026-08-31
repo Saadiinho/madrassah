@@ -1,6 +1,7 @@
 import Navbar from '../components/Navbar'
 import RegistrationForm from '../components/RegistrationForm'
 import Footer from "../components/Footer.tsx";
+import {NAME} from "../constants/info.ts";
 
 const Register = () => {
     return (
@@ -23,9 +24,9 @@ const Register = () => {
                         </span>
 
                         <h1 className="mt-3 text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">
-                            Rejoignez Online
-                            <span className="bg-linear-to-r from-blue-600 to-violet-600 bg-clip-text text-transparent">
-                                Course
+                            Rejoignez {NAME.first}{' '}
+                            <span className="text-blue-600">
+                                {NAME.highlight}
                             </span>
                         </h1>
 
