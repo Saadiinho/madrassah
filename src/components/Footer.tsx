@@ -80,10 +80,10 @@ const Footer = () => {
 
                         <nav className="mt-4 flex flex-col gap-3">
                             <Link
-                                to="/contact"
+                                to="/terms"
                                 className="text-sm text-slate-600 transition-colors hover:text-blue-600"
                             >
-                                Contact
+                                CGU
                             </Link>
 
                             <Link

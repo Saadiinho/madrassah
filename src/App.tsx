@@ -5,6 +5,7 @@ import Register from './pages/Register'
 import About from "./pages/About.tsx";
 import LegalNotice from "./pages/LegalNotice.tsx";
 import PrivacyPolicy from "./pages/PrivacyPolicy.tsx";
+import TermsOfUse from "./pages/TermsOfUse.tsx";
 
 function App() {
     return (
@@ -15,6 +16,7 @@ function App() {
                 <Route path="/about" element={<About />} />
                 <Route path="/legal" element={<LegalNotice />} />
                 <Route path="/privacy" element={<PrivacyPolicy />} />
+                <Route path="/terms" element={<TermsOfUse />} />
             </Routes>
         </BrowserRouter>
     )
