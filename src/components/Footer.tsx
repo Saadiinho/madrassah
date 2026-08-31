@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import {NAME} from "../constants/info.ts";
 
 const Footer = () => {
     return (
@@ -15,13 +16,16 @@ const Footer = () => {
                         >
                             <div className="flex h-9 w-9 items-center justify-center rounded-xl bg-linear-to-br from-blue-600 to-violet-600 shadow-md shadow-blue-500/20">
                                 <span className="text-lg font-bold text-white">
-                                    O
+                                    D
                                 </span>
                             </div>
 
                             <span className="text-lg font-bold tracking-tight text-slate-900">
-                                Online<span className="text-blue-600">Course</span>
+                            {NAME.first}{' '}
+                                <span className="text-blue-600">
+                                {NAME.highlight}
                             </span>
+                        </span>
                         </Link>
 
                         <p className="mt-4 max-w-md text-sm leading-6 text-slate-600">
