@@ -1,4 +1,4 @@
-import type { HowItWorksStep } from '../mocks/howItWorks'
+import type { HowItWorksStep } from '../constants/howItWorks.ts'
 
 interface HowItWorksStepProps {
     step: HowItWorksStep

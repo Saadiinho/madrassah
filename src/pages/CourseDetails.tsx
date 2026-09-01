@@ -1,6 +1,6 @@
 import { Link, useParams } from 'react-router-dom'
 import Button from '../components/Button'
-import { MOCK_COURSES } from '../mocks/courses'
+import { MOCK_COURSES } from '../constants/courses.ts'
 import Footer from "../components/Footer.tsx";
 import Navbar from "../components/Navbar.tsx";
 

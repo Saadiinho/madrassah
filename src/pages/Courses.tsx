@@ -1,6 +1,6 @@
 import CourseCard from '../components/CourseCard'
 import Button from '../components/Button'
-import { MOCK_COURSES } from '../mocks/courses'
+import { MOCK_COURSES } from '../constants/courses.ts'
 import Navbar from "../components/Navbar.tsx";
 import Footer from "../components/Footer.tsx";
 
