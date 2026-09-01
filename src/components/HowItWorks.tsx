@@ -1,4 +1,4 @@
-import { HOW_IT_WORKS_STEPS } from '../mocks/howItWorks'
+import { HOW_IT_WORKS_STEPS } from '../constants/howItWorks.ts'
 import {HowItWorksStep} from "./HowItWorksStep.tsx";
 
 const HowItWorks = () => {
