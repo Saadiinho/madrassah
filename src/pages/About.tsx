@@ -58,24 +58,34 @@ const About = () => {
 
                             {/* Visual */}
                             <div className="relative">
-                                <div className="aspect-square max-w-lg overflow-hidden rounded-3xl bg-linear-to-br from-blue-600 to-violet-600 p-1 shadow-xl">
-                                    <div className="flex h-full flex-col items-center justify-center rounded-[1.35rem] bg-white p-8 text-center">
+                                <div
+                                    className="relative aspect-square max-w-lg overflow-hidden rounded-3xl bg-cover bg-center shadow-xl"
+                                    style={{
+                                        backgroundImage: "url('/images/about/learning.jpg')",
+                                    }}
+                                >
+                                    {/* Filtre sombre */}
+                                    <div className="absolute inset-0 bg-black/55" />
 
-                                        <div className="flex h-20 w-20 items-center justify-center rounded-2xl bg-blue-50">
+                                    {/* Contenu */}
+                                    <div className="relative flex h-full flex-col items-center justify-center p-8 text-center text-white">
+
+                                        <div className="flex h-20 w-20 items-center justify-center rounded-2xl bg-white/10 backdrop-blur-sm">
                                             <span className="text-4xl">
                                                 📖
                                             </span>
                                         </div>
 
-                                        <h3 className="mt-6 text-2xl font-bold text-slate-900">
+                                        <h3 className="mt-6 text-2xl font-bold">
                                             Apprendre progressivement
                                         </h3>
 
-                                        <p className="mt-4 max-w-sm text-slate-600">
+                                        <p className="mt-4 max-w-sm text-white/80">
                                             Un enseignement structuré pour
                                             accompagner chaque élève dans
                                             son parcours.
                                         </p>
+
                                     </div>
                                 </div>
                             </div>
