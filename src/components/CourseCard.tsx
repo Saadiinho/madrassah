@@ -26,10 +26,12 @@ const CourseCard = ({ course }: CourseCardProps) => {
                     {course.level}
                 </span>
 
+                {/* Title */}
                 <h2 className="mt-4 text-xl font-bold text-slate-900">
                     {course.title}
                 </h2>
 
+                {/* Description */}
                 <p className="mt-3 text-sm leading-6 text-slate-600">
                     {course.description}
                 </p>
@@ -71,20 +73,41 @@ const CourseCard = ({ course }: CourseCardProps) => {
                     ))}
                 </div>
 
-                {/* Schedule */}
+                {/* Groups & Schedule */}
                 <div className="mt-5">
                     <p className="text-xs font-semibold uppercase tracking-wide text-slate-400">
-                        Horaires
+                        Groupes et horaires
                     </p>
 
-                    <div className="mt-2 space-y-1">
-                        {course.schedule.map((schedule) => (
-                            <p
-                                key={schedule}
-                                className="text-sm text-slate-600"
+                    <div className="mt-3 space-y-3">
+                        {course.groups.map((group) => (
+                            <div
+                                key={group.id}
+                                className="rounded-xl bg-slate-50 p-3"
                             >
-                                {schedule}
-                            </p>
+                                {/* Group name */}
+                                <div className="flex items-center justify-between gap-3">
+                                    <p className="text-sm font-semibold text-slate-900">
+                                        {group.name}
+                                    </p>
+
+                                    <span className="whitespace-nowrap text-xs font-medium text-green-600">
+                                        {group.availableSeats} places
+                                    </span>
+                                </div>
+
+                                {/* Schedule */}
+                                <div className="mt-2 space-y-1">
+                                    {group.schedule.map((schedule) => (
+                                        <p
+                                            key={schedule}
+                                            className="text-sm text-slate-600"
+                                        >
+                                            🕐 {schedule}
+                                        </p>
+                                    ))}
+                                </div>
+                            </div>
                         ))}
                     </div>
                 </div>
