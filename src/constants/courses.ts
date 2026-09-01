@@ -1,4 +1,4 @@
-import type { Course } from '../types/course'
+import type { Course } from '../types/course.ts'
 
 export const MOCK_COURSES: Course[] = [
     {
@@ -33,7 +33,7 @@ export const MOCK_COURSES: Course[] = [
                     'Samedi — 10h00 à 11h30',
                 ],
 
-                availableSeats: 8,
+                availableSeats: 15,
             },
         ],
     },
@@ -70,7 +70,7 @@ export const MOCK_COURSES: Course[] = [
                     'Samedi — 14h00 à 15h30',
                 ],
 
-                availableSeats: 10,
+                availableSeats: 15,
             },
         ],
     },
@@ -107,7 +107,7 @@ export const MOCK_COURSES: Course[] = [
                     'Samedi — 18h00 à 19h30',
                 ],
 
-                availableSeats: 12,
+                availableSeats: 15,
             },
         ],
     },

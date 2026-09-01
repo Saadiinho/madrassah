@@ -1,6 +1,6 @@
 import CourseCard from './CourseCard'
 import Button from './Button'
-import { MOCK_COURSES } from '../mocks/courses'
+import { MOCK_COURSES } from '../constants/courses.ts'
 
 const FeaturedCourses = () => {
     const featuredCourses = MOCK_COURSES.slice(0, 3)
