@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import Button from './Button'
+import {NAME} from "../constants/info.ts";
 
 const Navbar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -12,6 +13,7 @@ const Navbar = () => {
         setIsMenuOpen(false)
     }
 
+    // @ts-ignore
     return (
         <header className="sticky top-0 z-50 border-b border-slate-200/80 bg-white/90 backdrop-blur-md">
             <div className="mx-auto max-w-7xl px-4 sm:px-6">
@@ -25,12 +27,15 @@ const Navbar = () => {
                     >
                         <div className="flex h-9 w-9 items-center justify-center rounded-xl bg-linear-to-br from-blue-600 to-violet-600 shadow-md shadow-blue-500/20">
                             <span className="text-lg font-bold text-white">
-                                O
+                                D
                             </span>
                         </div>
 
                         <span className="text-lg font-bold tracking-tight text-slate-900">
-                            Online<span className="text-blue-600">Course</span>
+                            {NAME.first}{' '}
+                            <span className="text-blue-600">
+                                {NAME.highlight}
+                            </span>
                         </span>
                     </a>
 

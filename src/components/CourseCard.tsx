@@ -7,47 +7,109 @@ interface CourseCardProps {
 
 const CourseCard = ({ course }: CourseCardProps) => {
     return (
-        <article className="group overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-slate-900/10">
+        <article className="group overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
 
             {/* Image */}
-            <div className="relative aspect-video overflow-hidden bg-slate-100">
+            <div className="aspect-16/10 overflow-hidden bg-slate-100">
                 <img
                     src={course.image}
-                    alt={`Cours ${course.title}`}
+                    alt={course.title}
                     className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
                 />
-
-                {/* Level badge */}
-                <div className="absolute left-4 top-4">
-                    <span className="rounded-full bg-white/95 px-3 py-1.5 text-xs font-semibold text-slate-700 shadow-sm backdrop-blur-sm">
-                        {course.level}
-                    </span>
-                </div>
             </div>
 
             {/* Content */}
             <div className="p-6">
 
-                <h3 className="text-xl font-bold text-slate-900">
-                    {course.title}
-                </h3>
+                {/* Level */}
+                <span className="inline-flex rounded-full bg-blue-50 px-3 py-1 text-xs font-semibold text-blue-600">
+                    {course.level}
+                </span>
 
-                <p className="mt-3 line-clamp-2 text-sm leading-6 text-slate-600">
+                {/* Title */}
+                <h2 className="mt-4 text-xl font-bold text-slate-900">
+                    {course.title}
+                </h2>
+
+                {/* Description */}
+                <p className="mt-3 text-sm leading-6 text-slate-600">
                     {course.description}
                 </p>
 
-                {/* Metadata */}
-                <div className="mt-5 flex items-center gap-4 text-sm text-slate-500">
-                    <span className="flex items-center gap-1.5">
-                        <span>◷</span>
-                        {course.duration}
-                    </span>
+                {/* Information */}
+                <div className="mt-5 space-y-2 border-t border-slate-100 pt-5">
 
-                    <span className="h-1 w-1 rounded-full bg-slate-300" />
+                    <div className="flex items-center justify-between text-sm">
+                        <span className="text-slate-500">
+                            Cours
+                        </span>
 
-                    <span>
-                        {course.lessons} leçons
-                    </span>
+                        <span className="font-medium text-slate-900">
+                            {course.lessons} fois / semaine
+                        </span>
+                    </div>
+
+                    <div className="flex items-center justify-between text-sm">
+                        <span className="text-slate-500">
+                            Durée
+                        </span>
+
+                        <span className="font-medium text-slate-900">
+                            {course.duration}
+                        </span>
+                    </div>
+
+                </div>
+
+                {/* Subjects */}
+                <div className="mt-5 flex flex-wrap gap-2">
+                    {course.subjects.map((subject) => (
+                        <span
+                            key={subject}
+                            className="rounded-lg bg-slate-100 px-3 py-1.5 text-xs font-medium text-slate-600"
+                        >
+                            {subject}
+                        </span>
+                    ))}
+                </div>
+
+                {/* Groups & Schedule */}
+                <div className="mt-5">
+                    <p className="text-xs font-semibold uppercase tracking-wide text-slate-400">
+                        Groupes et horaires
+                    </p>
+
+                    <div className="mt-3 space-y-3">
+                        {course.groups.map((group) => (
+                            <div
+                                key={group.id}
+                                className="rounded-xl bg-slate-50 p-3"
+                            >
+                                {/* Group name */}
+                                <div className="flex items-center justify-between gap-3">
+                                    <p className="text-sm font-semibold text-slate-900">
+                                        {group.name}
+                                    </p>
+
+                                    <span className="whitespace-nowrap text-xs font-medium text-green-600">
+                                        {group.availableSeats} places
+                                    </span>
+                                </div>
+
+                                {/* Schedule */}
+                                <div className="mt-2 space-y-1">
+                                    {group.schedule.map((schedule) => (
+                                        <p
+                                            key={schedule}
+                                            className="text-sm text-slate-600"
+                                        >
+                                            🕐 {schedule}
+                                        </p>
+                                    ))}
+                                </div>
+                            </div>
+                        ))}
+                    </div>
                 </div>
 
                 {/* CTA */}
@@ -57,7 +119,7 @@ const CourseCard = ({ course }: CourseCardProps) => {
                         variant="outline"
                         className="w-full"
                     >
-                        Voir le cours
+                        Voir le programme
                     </Button>
                 </div>
 
