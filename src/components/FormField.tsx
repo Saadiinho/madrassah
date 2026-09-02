@@ -1,16 +1,29 @@
 interface FormFieldProps {
     id: string
+    name: string
+
     label: string
-    type?: 'text' | 'email' | 'tel' | 'date'
+
+    type?: string
     placeholder?: string
+
+    value: string
+
+    onChange: (
+        event: React.ChangeEvent<HTMLInputElement>
+    ) => void
+
     required?: boolean
 }
 
 const FormField = ({
                        id,
+                       name,
                        label,
                        type = 'text',
                        placeholder,
+                       value,
+                       onChange,
                        required = false,
                    }: FormFieldProps) => {
     return (
@@ -22,7 +35,7 @@ const FormField = ({
                 {label}
 
                 {required && (
-                    <span className="ml-1 text-blue-600">
+                    <span className="ml-1 text-[var(--color-primary)]">
                         *
                     </span>
                 )}
@@ -30,11 +43,23 @@ const FormField = ({
 
             <input
                 id={id}
-                name={id}
+                name={name}
                 type={type}
                 placeholder={placeholder}
+                value={value}
+                onChange={onChange}
                 required={required}
-                className="h-11 rounded-xl border border-slate-200 bg-white px-4 text-sm text-slate-900 outline-none transition-all placeholder:text-slate-400 focus:border-blue-500 focus:ring-4 focus:ring-blue-500/10"
+                className="
+                    h-11 rounded-xl
+                    border border-slate-200
+                    bg-white px-4
+                    text-sm text-slate-900
+                    outline-none
+                    transition-all
+                    focus:border-[var(--color-primary)]
+                    focus:ring-4
+                    focus:ring-[var(--color-primary)]/10
+                "
             />
         </div>
     )
