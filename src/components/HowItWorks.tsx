@@ -1,5 +1,5 @@
 import { HOW_IT_WORKS_STEPS } from '../constants/howItWorks.ts'
-import {HowItWorksStep} from "./HowItWorksStep.tsx";
+import {HowItWorksStepCard} from "./HowItWorksStep.tsx";
 
 const HowItWorks = () => {
     return (
@@ -29,7 +29,7 @@ const HowItWorks = () => {
                     <div className="absolute left-0 right-0 top-8 hidden h-px bg-linear-to-r from-blue-200 via-violet-200 to-blue-200 md:block" />
 
                     {HOW_IT_WORKS_STEPS.map((step) => (
-                        <HowItWorksStep
+                        <HowItWorksStepCard
                             key={step.number}
                             step={step}
                         />

@@ -4,7 +4,7 @@ interface HowItWorksStepProps {
     step: HowItWorksStep
 }
 
-export const HowItWorksStep = ({ step }: HowItWorksStepProps) => {
+export const HowItWorksStepCard = ({ step }: HowItWorksStepProps) => {
     return (
         <article className="relative text-center">
 
@@ -24,4 +24,3 @@ export const HowItWorksStep = ({ step }: HowItWorksStepProps) => {
         </article>
     )
 }
-
