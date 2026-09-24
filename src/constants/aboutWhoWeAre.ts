@@ -3,12 +3,11 @@ export const ABOUT_WHO_WE_ARE = {
 
     title: 'Une plateforme dédiée à l’apprentissage et à la transmission.',
 
-
     paragraphs: [
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+        'Nous sommes deux enseignants passionnés par le Coran et engagés dans sa transmission. Tous deux connaisseurs du Coran par cœur, nous souhaitons mettre notre savoir et notre expérience au service de celles et ceux qui souhaitent apprendre, progresser et approfondir leur relation avec le Livre d’Allah.',
 
-        'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.',
+        'Notre objectif est de rendre l’apprentissage du Coran accessible à tous, quel que soit l’âge ou le niveau de connaissance. À travers des cours adaptés aux enfants, aux adolescents et aux adultes, nous accompagnons chaque élève dans son parcours avec sérieux, bienveillance et régularité.',
 
-        'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+        'Nous avons créé cette plateforme avec la volonté de transmettre le Coran au plus grand nombre et de permettre à chacun d’avancer à son rythme. Notre démarche repose sur un enseignement structuré, accessible et centré sur la progression de chaque élève.',
     ],
 } as const
