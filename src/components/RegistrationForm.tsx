@@ -102,7 +102,7 @@ const RegistrationForm = () => {
                         text-sm text-green-700
                     "
                 >
-                    {successMessage}
+                    Votre inscription a bien été enregistrée ! Vous allez recevoir prochainement un e-mail afin de finaliser votre inscription. Pensez à vérifier vos courriers indésirables (spams) si vous ne le recevez pas dans votre boîte de réception.
                 </div>
             )}
 
