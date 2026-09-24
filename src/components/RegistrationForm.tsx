@@ -14,8 +14,8 @@ const RegistrationForm = () => {
         phone: '',
         email: '',
 
-        desiredLevel: 'Adulte',
-        quranKnowledge: 'Aucune',
+        desiredLevel: 'adulte',
+        quranKnowledge: 'aucune',
 
         legalRepresentativeLastName: '',
         legalRepresentativeFirstName: '',
@@ -231,15 +231,15 @@ const RegistrationForm = () => {
                                 focus:ring-[var(--color-primary)]/10
                             "
                         >
-                            <option value="Enfant">
+                            <option value="enfant">
                                 Enfant
                             </option>
 
-                            <option value="Adolescent">
+                            <option value="adolescent">
                                 Adolescent
                             </option>
 
-                            <option value="Adulte">
+                            <option value="adulte">
                                 Adulte
                             </option>
                         </select>
@@ -276,19 +276,19 @@ const RegistrationForm = () => {
                                 focus:ring-[var(--color-primary)]/10
                             "
                         >
-                            <option value="Aucune">
+                            <option value="aucune">
                                 Aucune
                             </option>
 
-                            <option value="Débutant">
+                            <option value="debutant">
                                 Débutant
                             </option>
 
-                            <option value="Intermédiaire">
+                            <option value="intermediaire">
                                 Intermédiaire
                             </option>
 
-                            <option value="Avancé">
+                            <option value="avance">
                                 Avancé
                             </option>
                         </select>

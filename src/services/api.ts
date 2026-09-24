@@ -1,4 +1,4 @@
-const API_URL = 'http://localhost:8000'
+const API_URL = 'http://localhost:8001/api/v1'
 
 interface ApiOptions extends Omit<RequestInit, 'body'> {
     body?: unknown
@@ -23,10 +23,15 @@ export const api = async <T>(
     })
 
     if (!response.ok) {
+        const errorBody = await response.json().catch(() => null)
+
+        console.error('Erreur API :', errorBody)
+
         throw new Error(
-            `Erreur API : ${response.status} ${response.statusText}`
+            errorBody?.detail
+                ? JSON.stringify(errorBody.detail)
+                : `Erreur API : ${response.status} ${response.statusText}`
         )
     }
-
     return response.json() as Promise<T>
 }
