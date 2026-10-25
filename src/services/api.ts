@@ -1,4 +1,5 @@
-const API_URL = 'http://daralcoran.alwaysdata.net/api/v1'
+const API_URL = 'https://daralcoran.alwaysdata.net/api/v1'
+// const API_URL = 'http://localhost:8001/api/v1'
 
 interface ApiOptions extends Omit<RequestInit, 'body'> {
     body?: unknown
