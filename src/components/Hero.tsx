@@ -1,7 +1,4 @@
 import {
-    BookOpen,
-    GraduationCap,
-    Users,
     CheckCircle2,
     ArrowRight,
     Sparkles,
@@ -13,11 +10,6 @@ import HeroVisual from './HeroVisual'
 
 import { HERO_CONTENT } from '../constants/hero'
 
-const benefitIcons = {
-    BookOpen,
-    GraduationCap,
-    Users,
-}
 
 const Hero = () => {
     return (
@@ -63,7 +55,7 @@ const Hero = () => {
                         >
                             {HERO_CONTENT.title}
 
-                            <span className="mt-2 block bg-gradient-to-r from-blue-600 to-violet-600 bg-clip-text text-transparent">
+                            <span className="mt-2 block bg-linear-to-r from-blue-600 to-violet-600 bg-clip-text text-transparent">
                                 {HERO_CONTENT.titleHighlight}
                             </span>
                         </h1>
@@ -123,7 +115,7 @@ const Hero = () => {
                         {/* Decorative background */}
                         <div
                             aria-hidden="true"
-                            className="absolute -inset-5 rounded-[2rem] bg-gradient-to-br from-blue-500/10 via-violet-500/10 to-indigo-500/10 blur-2xl"
+                            className="absolute -inset-5 rounded-4xl bg-linear-to-br from-blue-500/10 via-violet-500/10 to-indigo-500/10 blur-2xl"
                         />
 
                         {/* Main image */}
@@ -134,7 +126,7 @@ const Hero = () => {
                             <div className="absolute -bottom-8 left-3 right-3 rounded-2xl border border-white/70 bg-white/95 p-4 shadow-xl shadow-slate-900/10 backdrop-blur-md sm:-left-8 sm:right-12 sm:p-5">
 
                                 <div className="mb-3 flex items-center gap-2">
-                                    <div className="flex h-9 w-9 items-center justify-center rounded-xl bg-gradient-to-br from-blue-600 to-violet-600 text-white">
+                                    <div className="flex h-9 w-9 items-center justify-center rounded-xl bg-linear-to-br from-blue-600 to-violet-600 text-white">
                                         <Sparkles size={18} />
                                     </div>
 
@@ -178,13 +170,13 @@ const Hero = () => {
                 {/* Bottom highlights */}
                 <div className="mt-24 grid gap-4 border-t border-slate-100 pt-8 sm:grid-cols-3 lg:mt-28">
 
-                    {HERO_CONTENT.highlights.map((highlight, index) => (
+                    {HERO_CONTENT.highlights.map((highlight) => (
                         <div
                             key={highlight.label}
                             className="flex items-center justify-center gap-4 rounded-2xl px-4 py-5 text-center transition-colors hover:bg-slate-50 sm:justify-start sm:text-left"
                         >
 
-                            <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-gradient-to-br from-blue-100 to-violet-100 text-lg font-bold text-violet-700">
+                            <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-linear-to-br from-blue-100 to-violet-100 text-lg font-bold text-violet-700">
                                 {highlight.value}
                             </div>
 
