@@ -10,12 +10,12 @@ export const HERO_CONTENT = {
 
     primaryAction: {
         label: 'Découvrir nos formations',
-        href: '/formations',
+        href: '/courses',
     },
 
     secondaryAction: {
         label: 'Comment ça fonctionne ?',
-        href: '/comment-ca-marche',
+        href: '/about',
     },
 
     benefits: [
