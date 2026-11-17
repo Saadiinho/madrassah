@@ -5,7 +5,7 @@ import CTASection from '../components/CTASection'
 import AboutWhoWeAre from '../components/AboutWhoWeAre'
 import { FEATURES } from '../constants/features'
 import { ABOUT_CONTENT } from '../constants/about'
-import FeatureCard from "../components/FeatureCard.tsx";
+import FeatureCard from "../components/Features/FeatureCard.tsx";
 
 const About = () => {
     return (

@@ -1,26 +1,62 @@
+import {
+    Video,
+    MessageCircle,
+    Users,
+    BookOpen,
+    GraduationCap,
+    Globe,
+} from 'lucide-react'
+
+import type { LucideIcon } from 'lucide-react'
+
 export interface Feature {
+    icon: LucideIcon
     title: string
     description: string
-    icon: string
+    color: 'purple' | 'blue' | 'orange' | 'green' | 'pink' | 'indigo'
 }
 
 export const FEATURES: Feature[] = [
     {
-        title: 'Des cours adaptés à chaque âge',
+        icon: Video,
+        title: 'Des cours en visioconférence',
         description:
-            'Des programmes pensés pour accompagner les enfants, les adolescents et les adultes selon leur âge et leur niveau.',
-        icon: '👨‍👩‍👧',
+            'Participez à de véritables cours en ligne, en direct avec un enseignant. Apprenez et progressez dans un cadre interactif.',
+        color: 'purple',
     },
     {
-        title: 'Deux cours par semaine',
+        icon: MessageCircle,
+        title: 'Des échanges en direct',
         description:
-            'Un rythme régulier de deux cours en ligne de 1h30 par semaine pour favoriser un apprentissage progressif.',
-        icon: '📚',
+            'Posez vos questions, échangez avec votre enseignant et bénéficiez de réponses pendant vos séances.',
+        color: 'blue',
     },
     {
-        title: 'Apprentissage du Coran',
+        icon: Users,
+        title: 'Un apprentissage adapté à chaque âge',
         description:
-            'Apprenez et progressez dans votre connaissance du Coran grâce à un enseignement structuré et progressif.',
-        icon: '📖',
+            'Des formations pensées pour accompagner les enfants, les adolescents et les adultes selon leurs besoins.',
+        color: 'orange',
+    },
+    {
+        icon: BookOpen,
+        title: 'L’apprentissage du Coran',
+        description:
+            'Découvrez et approfondissez vos connaissances du Coran grâce à un enseignement structuré et progressif.',
+        color: 'green',
+    },
+    {
+        icon: GraduationCap,
+        title: 'La jurisprudence islamique',
+        description:
+            'Initiez-vous aux bases du Fiqh et développez vos connaissances en jurisprudence islamique.',
+        color: 'pink',
+    },
+    {
+        icon: Globe,
+        title: 'Accessible partout',
+        description:
+            'Suivez vos cours en ligne depuis votre domicile, où que vous soyez dans un pays francophone.',
+        color: 'indigo',
     },
 ]
