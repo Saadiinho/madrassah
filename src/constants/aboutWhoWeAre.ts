@@ -1,13 +1,13 @@
 export const ABOUT_WHO_WE_ARE = {
     badge: 'Qui sommes-nous ?',
 
-    title: 'Une plateforme dédiée à l’apprentissage et à la transmission.',
+    title: 'Deux enseignants réunis par une même volonté : transmettre le Coran.',
 
     paragraphs: [
-        'Nous sommes deux enseignants passionnés par le Coran et engagés dans sa transmission. Tous deux connaisseurs du Coran par cœur, nous souhaitons mettre notre savoir et notre expérience au service de celles et ceux qui souhaitent apprendre, progresser et approfondir leur relation avec le Livre d’Allah.',
+        'Dar Al Coran est un projet porté par deux enseignants connaissant le Coran par cœur et animés par une même volonté : partager leur connaissance du Livre d’Allah et rendre son apprentissage accessible au plus grand nombre. Nous avons créé cette plateforme pour accompagner celles et ceux qui souhaitent découvrir le Coran, améliorer leur récitation et approfondir leur apprentissage.',
 
-        'Notre objectif est de rendre l’apprentissage du Coran accessible à tous, quel que soit l’âge ou le niveau de connaissance. À travers des cours adaptés aux enfants, aux adolescents et aux adultes, nous accompagnons chaque élève dans son parcours avec sérieux, bienveillance et régularité.',
+        'Nous souhaitons proposer un enseignement adapté à chacun, des enfants aux adultes, en tenant compte de l’âge et du niveau de connaissance de chaque élève. Notre approche privilégie la progression, la régularité et un accompagnement bienveillant afin que chacun puisse apprendre dans un cadre propice à l’étude.',
 
-        'Nous avons créé cette plateforme avec la volonté de transmettre le Coran au plus grand nombre et de permettre à chacun d’avancer à son rythme. Notre démarche repose sur un enseignement structuré, accessible et centré sur la progression de chaque élève.',
+        'À travers Dar Al Coran, notre ambition est de faire de l’apprentissage du Coran une démarche accessible et régulière. Nous souhaitons transmettre ce savoir avec sérieux, accompagner chaque élève dans son évolution et encourager chacun à progresser à son rythme.',
     ],
 } as const
