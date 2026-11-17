@@ -1,15 +1,21 @@
+import {ArrowRight, CheckCircle2, Sparkles,} from 'lucide-react'
+
+import Button from '../Button.tsx'
+import HeroBadge from './HeroBadge.tsx'
+import HeroVisual from './HeroVisual.tsx'
 import {
-    CheckCircle2,
-    ArrowRight,
-    Sparkles,
+    Video,
+    MessageCircle,
+    Users,
 } from 'lucide-react'
+import {HERO_CONTENT} from '../../constants/hero.ts'
 
-import Button from './Button'
-import HeroBadge from './HeroBadge'
-import HeroVisual from './HeroVisual'
 
-import { HERO_CONTENT } from '../constants/hero'
-
+const highlightIcons = {
+    Video,
+    MessageCircle,
+    Users,
+}
 
 const Hero = () => {
     return (
@@ -168,30 +174,41 @@ const Hero = () => {
                 </div>
 
                 {/* Bottom highlights */}
-                <div className="mt-24 grid gap-4 border-t border-slate-100 pt-8 sm:grid-cols-3 lg:mt-28">
+                <div className="mt-20 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3 lg:gap-6">
 
-                    {HERO_CONTENT.highlights.map((highlight) => (
-                        <div
-                            key={highlight.label}
-                            className="flex items-center justify-center gap-4 rounded-2xl px-4 py-5 text-center transition-colors hover:bg-slate-50 sm:justify-start sm:text-left"
-                        >
+                    {HERO_CONTENT.highlights.map((highlight) => {
+                        // @ts-ignore
+                        const Icon = highlightIcons[highlight.icon]
 
-                            <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-linear-to-br from-blue-100 to-violet-100 text-lg font-bold text-violet-700">
-                                {highlight.value}
+                        return (
+                            <div
+                                key={highlight.title}
+                                className="group flex items-center gap-4 rounded-2xl border border-slate-200/80 bg-white p-5 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-violet-200 hover:shadow-lg hover:shadow-violet-100/50"
+                            >
+
+                                {/* Icon */}
+                                <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl bg-linear-to-br from-blue-50 to-violet-100 text-violet-600 transition-all duration-300 group-hover:from-blue-600 group-hover:to-violet-600 group-hover:text-white">
+
+                                    <Icon size={25} strokeWidth={1.8} />
+
+                                </div>
+
+                                {/* Content */}
+                                <div className="min-w-0">
+
+                                    <h3 className="text-base font-bold text-slate-900 sm:text-lg">
+                                        {highlight.title}
+                                    </h3>
+
+                                    <p className="mt-1 text-sm leading-relaxed text-slate-500">
+                                        {highlight.label}
+                                    </p>
+
+                                </div>
+
                             </div>
-
-                            <div>
-                                <p className="text-2xl font-bold text-slate-900">
-                                    {highlight.value}
-                                </p>
-
-                                <p className="text-sm text-slate-500">
-                                    {highlight.label}
-                                </p>
-                            </div>
-
-                        </div>
-                    ))}
+                        )
+                    })}
 
                 </div>
 

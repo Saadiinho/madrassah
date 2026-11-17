@@ -1,5 +1,5 @@
 import Navbar from '../components/Navbar'
-import Hero from '../components/Hero'
+import Hero from '../components/Hero/Hero.tsx'
 import Features from '../components/Features'
 import FeaturedCourses from '../components/FeaturedCourses'
 import HowItWorks from '../components/HowItWorks'

@@ -1,12 +1,12 @@
 export const HERO_CONTENT = {
-    badge: 'Votre institut d’apprentissage islamique en ligne',
+    badge: 'Cours de Coran et sciences islamiques en direct',
 
     title: 'Apprenez le Coran et les sciences islamiques',
 
-    titleHighlight: 'Où que vous soyez, à votre rythme.',
+    titleHighlight: 'En direct avec un enseignant, où que vous soyez.',
 
     description:
-        'Bienvenue chez Dar Al Coran, votre espace d’apprentissage dédié au Coran et à la jurisprudence islamique (Fiqh). Nous proposons des cours en ligne destinés aux enfants, aux adolescents et aux adultes, pour découvrir, apprendre et approfondir ses connaissances à travers un parcours adapté à chaque âge.',
+        'Bienvenue chez Dar Al Coran, votre institut de cours de Coran et de jurisprudence islamique en ligne. Participez à des cours en visioconférence, échangez directement avec votre enseignant et posez toutes vos questions. Des formations adaptées aux enfants, aux adolescents et aux adultes pour apprendre et progresser à votre rythme.',
 
     primaryAction: {
         label: 'Découvrir nos formations',
@@ -20,14 +20,14 @@ export const HERO_CONTENT = {
 
     benefits: [
         {
-            icon: 'BookOpen',
-            title: 'Apprentissage du Coran',
-            description: 'Un parcours pour apprendre et progresser.',
+            icon: 'Video',
+            title: 'Cours en direct',
+            description: 'Des séances en visioconférence avec un enseignant.',
         },
         {
-            icon: 'GraduationCap',
-            title: 'Coran et jurisprudence',
-            description: 'Deux domaines d’apprentissage complémentaires.',
+            icon: 'MessageCircle',
+            title: 'Échanges et questions-réponses',
+            description: 'Posez vos questions et échangez pendant les cours.',
         },
         {
             icon: 'Users',
@@ -38,25 +38,28 @@ export const HERO_CONTENT = {
 
     highlights: [
         {
-            value: '2',
-            label: 'cours par semaine',
+            icon: 'Video',
+            title: 'Cours en direct',
+            label: 'En visioconférence avec un enseignant',
         },
         {
-            value: '3',
-            label: 'publics accompagnés',
+            icon: 'MessageCircle',
+            title: 'Interactifs',
+            label: 'Questions et échanges en direct',
         },
         {
-            value: '2',
-            label: 'domaines enseignés',
+            icon: 'Users',
+            title: 'Tous les âges',
+            label: 'Enfants, adolescents et adultes',
         },
     ],
 
     visualCard: {
-        eyebrow: 'NOS ENSEIGNEMENTS',
-        title: 'Apprendre et progresser',
+        eyebrow: 'NOTRE APPROCHE',
+        title: 'Un apprentissage interactif',
         items: [
-            'Apprentissage du Coran',
-            'Jurisprudence islamique (Fiqh)',
+            'Des cours en visioconférence',
+            'Des échanges avec votre enseignant',
         ],
     },
 }
