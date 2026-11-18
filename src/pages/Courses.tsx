@@ -21,6 +21,11 @@ const FAQ_ITEMS = [
             'Les programmes sont organisés par tranche d’âge : enfants, adolescents et adultes. Pour connaître le groupe le plus adapté à votre situation, vous pouvez consulter les programmes ou nous contacter avant votre inscription.',
     },
     {
+        question: 'Quelle école juridique est enseignée dans les cours de fiqh ?',
+        answer:
+            'L’enseignement du fiqh s’appuie principalement sur l’école malikite. Les avis des autres écoles juridiques sont également étudiés afin de présenter les différentes approches et de mieux comprendre la richesse de la jurisprudence islamique.',
+    },
+    {
         question: 'Quelles matières sont enseignées ?',
         answer:
             'Les programmes proposés associent l’apprentissage du Coran et l’étude de la jurisprudence islamique. Le contenu est organisé selon le public auquel le cours s’adresse.',

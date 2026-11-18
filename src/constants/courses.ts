@@ -44,7 +44,7 @@ export const MOCK_COURSES: Course[] = [
         title: 'Niveau 2 — Adolescents',
 
         description:
-            'Un programme destiné aux adolescents pour approfondir leur apprentissage du Coran et développer leurs connaissances en jurisprudence.',
+            "Un programme destiné aux adolescents pour approfondir leur apprentissage du Coran et développer leurs connaissances en jurisprudence de l'école Malikite. Les avis des autres écoles sont également cités.",
 
         image: '/images/courses/teenagers.jpg',
 
@@ -81,7 +81,7 @@ export const MOCK_COURSES: Course[] = [
         title: 'Niveau 3 — Adultes',
 
         description:
-            'Un programme destiné aux adultes permettant de progresser dans l’apprentissage du Coran et d’approfondir les bases de la jurisprudence.',
+            "Un programme destiné aux adultes permettant de progresser dans l’apprentissage du Coran et d’approfondir les bases de la jurisprudence de l'école Malikite. Les avis des autres écoles sont également cités. ",
 
         image: '/images/courses/adults.jpg',
 
