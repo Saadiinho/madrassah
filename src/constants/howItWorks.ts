@@ -1,26 +1,38 @@
+import {
+    BookOpen,
+    ClipboardList,
+    Video,
+} from 'lucide-react'
+
+import type { LucideIcon } from 'lucide-react'
+
 export interface HowItWorksStep {
     number: string
     title: string
     description: string
+    icon: LucideIcon
 }
 
 export const HOW_IT_WORKS_STEPS: HowItWorksStep[] = [
     {
         number: '01',
-        title: 'Choisissez votre niveau',
+        title: 'Choisissez votre formation',
         description:
-            'Choisissez le programme qui correspond à votre âge : enfants, adolescents ou adultes.',
+            'Sélectionnez le programme adapté à votre âge et à vos objectifs : enfants, adolescents ou adultes.',
+        icon: BookOpen,
     },
     {
         number: '02',
         title: 'Inscrivez-vous',
         description:
-            'Remplissez le formulaire d’inscription avec vos informations et indiquez votre niveau de connaissance du Coran.',
+            'Complétez le formulaire d’inscription avec vos informations et précisez votre niveau de connaissance du Coran.',
+        icon: ClipboardList,
     },
     {
         number: '03',
-        title: 'Commencez vos cours',
+        title: 'Participez à vos cours',
         description:
-            'Suivez deux cours en ligne de 1h30 par semaine et progressez progressivement dans votre apprentissage du Coran et de la jurisprudence.',
+            'Retrouvez votre enseignant en visioconférence pour deux séances de 1h30 par semaine, avec des échanges et des questions-réponses en direct.',
+        icon: Video,
     },
 ]

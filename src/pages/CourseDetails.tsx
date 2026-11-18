@@ -56,7 +56,7 @@ const CourseDetails = () => {
             <section className="relative overflow-hidden bg-white">
                 <div className="pointer-events-none absolute inset-0">
                     <div className="absolute -left-40 -top-40 h-80 w-80 rounded-full bg-blue-400/10 blur-3xl" />
-                    <div className="absolute -bottom-40 -right-40 h-80 w-80 rounded-full bg-violet-400/10 blur-3xl" />
+                    <div className="absolute -bottom-40 -right-40 h-80 w-80 rounded-full bg-blue-400/10 blur-3xl" />
                 </div>
 
                 <div className="relative mx-auto max-w-7xl px-4 py-16 sm:px-6 sm:py-20 lg:py-24">
@@ -235,7 +235,7 @@ const CourseDetails = () => {
                                             {group.name}
                                         </h3>
 
-                                        <span className="rounded-full bg-green-50 px-3 py-1 text-xs font-semibold text-green-600">
+                                        <span className="rounded-full bg-blue-50 px-3 py-1 text-xs font-semibold text-blue-600">
                                             {group.availableSeats} places
                                         </span>
                                     </div>
@@ -269,7 +269,7 @@ const CourseDetails = () => {
             <section className="py-16 sm:py-20">
                 <div className="mx-auto max-w-4xl px-4 text-center sm:px-6">
 
-                    <div className="rounded-3xl bg-linear-to-br from-blue-600 to-violet-600 px-6 py-12 shadow-xl sm:px-12">
+                    <div className="rounded-3xl bg-linear-to-br from-blue-600 to-blue-600 px-6 py-12 shadow-xl sm:px-12">
 
                         <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
                             Prêt à commencer votre apprentissage ?
