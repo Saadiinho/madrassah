@@ -31,7 +31,7 @@ const Hero = () => {
 
             <div
                 aria-hidden="true"
-                className="pointer-events-none absolute -right-40 top-20 h-96 w-96 rounded-full bg-violet-400/10 blur-3xl"
+                className="pointer-events-none absolute -right-40 top-20 h-96 w-96 rounded-full bg-blue-400/10 blur-3xl"
             />
 
             <div
@@ -61,7 +61,7 @@ const Hero = () => {
                         >
                             {HERO_CONTENT.title}
 
-                            <span className="mt-2 block bg-linear-to-r from-blue-600 to-violet-600 bg-clip-text text-transparent">
+                            <span className="mt-2 block bg-linear-to-r from-blue-600 to-blue-600 bg-clip-text text-transparent">
                                 {HERO_CONTENT.titleHighlight}
                             </span>
                         </h1>
@@ -98,7 +98,7 @@ const Hero = () => {
                             <div className="flex items-center gap-2">
                                 <CheckCircle2
                                     size={16}
-                                    className="shrink-0 text-green-500"
+                                    className="shrink-0 text-blue-500"
                                 />
                                 <span>Enfants, adolescents et adultes</span>
                             </div>
@@ -106,7 +106,7 @@ const Hero = () => {
                             <div className="flex items-center gap-2">
                                 <CheckCircle2
                                     size={16}
-                                    className="shrink-0 text-green-500"
+                                    className="shrink-0 text-blue-500"
                                 />
                                 <span>Apprentissage en ligne</span>
                             </div>
@@ -121,7 +121,7 @@ const Hero = () => {
                         {/* Decorative background */}
                         <div
                             aria-hidden="true"
-                            className="absolute -inset-5 rounded-4xl bg-linear-to-br from-blue-500/10 via-violet-500/10 to-indigo-500/10 blur-2xl"
+                            className="absolute -inset-5 rounded-4xl bg-linear-to-br from-blue-500/10 via-blue-500/10 to-indigo-500/10 blur-2xl"
                         />
 
                         {/* Main image */}
@@ -132,7 +132,7 @@ const Hero = () => {
                             <div className="absolute -bottom-8 left-3 right-3 rounded-2xl border border-white/70 bg-white/95 p-4 shadow-xl shadow-slate-900/10 backdrop-blur-md sm:-left-8 sm:right-12 sm:p-5">
 
                                 <div className="mb-3 flex items-center gap-2">
-                                    <div className="flex h-9 w-9 items-center justify-center rounded-xl bg-linear-to-br from-blue-600 to-violet-600 text-white">
+                                    <div className="flex h-9 w-9 items-center justify-center rounded-xl bg-linear-to-br from-blue-600 to-blue-600 text-white">
                                         <Sparkles size={18} />
                                     </div>
 
@@ -156,7 +156,7 @@ const Hero = () => {
                                         >
                                             <CheckCircle2
                                                 size={14}
-                                                className="shrink-0 text-violet-600"
+                                                className="shrink-0 text-blue-600"
                                             />
 
                                             {item}
@@ -183,11 +183,11 @@ const Hero = () => {
                         return (
                             <div
                                 key={highlight.title}
-                                className="group flex items-center gap-4 rounded-2xl border border-slate-200/80 bg-white p-5 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-violet-200 hover:shadow-lg hover:shadow-violet-100/50"
+                                className="group flex items-center gap-4 rounded-2xl border border-slate-200/80 bg-white p-5 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-blue-200 hover:shadow-lg hover:shadow-blue-100/50"
                             >
 
                                 {/* Icon */}
-                                <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl bg-linear-to-br from-blue-50 to-violet-100 text-violet-600 transition-all duration-300 group-hover:from-blue-600 group-hover:to-violet-600 group-hover:text-white">
+                                <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl bg-linear-to-br from-blue-50 to-blue-100 text-blue-600 transition-all duration-300 group-hover:from-blue-600 group-hover:to-blue-600 group-hover:text-white">
 
                                     <Icon size={25} strokeWidth={1.8} />
 

@@ -96,10 +96,10 @@ const RegistrationForm = () => {
                 <div
                     className="
                         rounded-xl
-                        border border-green-200
-                        bg-green-50
+                        border border-blue-200
+                        bg-blue-50
                         p-4
-                        text-sm text-green-700
+                        text-sm text-blue-700
                     "
                 >
                     Votre inscription a bien été enregistrée ! Vous allez recevoir prochainement un e-mail afin de finaliser votre inscription. Pensez à vérifier vos courriers indésirables (spams) si vous ne le recevez pas dans votre boîte de réception.

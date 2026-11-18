@@ -24,7 +24,7 @@ const CTASection = () => {
                 <div className="absolute -left-40 -top-40 h-125 w-125 rounded-full bg-blue-600/20 blur-[120px]" />
 
                 {/* Violet glow */}
-                <div className="absolute -bottom-60 -right-40 h-150 w-150 rounded-full bg-violet-600/20 blur-[130px]" />
+                <div className="absolute -bottom-60 -right-40 h-150 w-150 rounded-full bg-blue-600/20 blur-[130px]" />
 
                 {/* Center glow */}
                 <div className="absolute left-1/2 top-1/2 h-96 w-96 -translate-x-1/2 -translate-y-1/2 rounded-full bg-blue-500/10 blur-[120px]" />
@@ -39,7 +39,7 @@ const CTASection = () => {
 
                     <Sparkles
                         size={15}
-                        className="text-violet-300"
+                        className="text-blue-300"
                     />
 
                     Votre apprentissage commence ici
@@ -53,7 +53,7 @@ const CTASection = () => {
                 >
                     Faites le premier pas vers votre apprentissage du Coran.
 
-                    <span className="mt-3 block bg-linear-to-r from-blue-400 via-violet-400 to-purple-400 bg-clip-text text-transparent">
+                    <span className="mt-3 block bg-linear-to-r from-blue-400 via-blue-400 to-blue-300 bg-clip-text text-transparent">
                         Apprenez, progressez, transmettez.
                     </span>
                 </h2>
@@ -103,7 +103,7 @@ const CTASection = () => {
 
                         <MessageCircle
                             size={18}
-                            className="text-violet-400"
+                            className="text-blue-400"
                         />
 
                         <span>Questions et échanges</span>
@@ -128,7 +128,7 @@ const CTASection = () => {
             {/* Bottom decorative line */}
             <div
                 aria-hidden="true"
-                className="absolute bottom-0 left-0 h-px w-full bg-linear-to-r from-transparent via-violet-500/50 to-transparent"
+                className="absolute bottom-0 left-0 h-px w-full bg-linear-to-r from-transparent via-blue-500/50 to-transparent"
             />
 
         </section>

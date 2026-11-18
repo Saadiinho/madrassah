@@ -16,7 +16,7 @@ const Features = () => {
 
             <div
                 aria-hidden="true"
-                className="pointer-events-none absolute -right-40 bottom-0 h-80 w-80 rounded-full bg-violet-200/20 blur-3xl"
+                className="pointer-events-none absolute -right-40 bottom-0 h-80 w-80 rounded-full bg-blue-200/20 blur-3xl"
             />
 
             <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -33,7 +33,7 @@ const Features = () => {
                         className="mt-5 text-3xl font-extrabold tracking-tight text-slate-900 sm:text-4xl lg:text-5xl"
                     >
                         Un apprentissage du Coran et du Fiqh{' '}
-                        <span className="bg-gradient-to-r from-blue-600 to-violet-600 bg-clip-text text-transparent">
+                        <span className="bg-gradient-to-r from-blue-600 to-blue-600 bg-clip-text text-transparent">
                             pensé pour vous.
                         </span>
                     </h2>

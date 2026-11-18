@@ -17,7 +17,7 @@ const HowItWorks = () => {
 
             <div
                 aria-hidden="true"
-                className="pointer-events-none absolute -right-40 bottom-0 h-80 w-80 rounded-full bg-violet-200/20 blur-3xl"
+                className="pointer-events-none absolute -right-40 bottom-0 h-80 w-80 rounded-full bg-blue-200/20 blur-3xl"
             />
 
             <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -25,7 +25,7 @@ const HowItWorks = () => {
                 {/* Section heading */}
                 <div className="mx-auto max-w-2xl text-center">
 
-                    <span className="inline-flex items-center gap-2 rounded-full border border-violet-100 bg-violet-50 px-4 py-2 text-xs font-bold uppercase tracking-wider text-violet-700">
+                    <span className="inline-flex items-center gap-2 rounded-full border border-blue-100 bg-blue-50 px-4 py-2 text-xs font-bold uppercase tracking-wider text-blue-700">
 
                         <Sparkles size={14} />
 
@@ -38,7 +38,7 @@ const HowItWorks = () => {
                         className="mt-5 text-3xl font-extrabold tracking-tight text-slate-900 sm:text-4xl lg:text-5xl"
                     >
                         Apprenez le Coran en ligne{' '}
-                        <span className="bg-linear-to-r from-blue-600 to-violet-600 bg-clip-text text-transparent">
+                        <span className="bg-linear-to-r from-blue-600 to-blue-600 bg-clip-text text-transparent">
                             en quelques étapes.
                         </span>
                     </h2>

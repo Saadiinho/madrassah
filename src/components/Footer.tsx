@@ -14,7 +14,7 @@ const Footer = () => {
                             to="/"
                             className="inline-flex items-center gap-2"
                         >
-                            <div className="flex h-9 w-9 items-center justify-center rounded-xl bg-linear-to-br from-blue-600 to-violet-600 shadow-md shadow-blue-500/20">
+                            <div className="flex h-9 w-9 items-center justify-center rounded-xl bg-linear-to-br from-blue-600 to-blue-600 shadow-md shadow-blue-500/20">
                                 <span className="text-lg font-bold text-white">
                                     D
                                 </span>

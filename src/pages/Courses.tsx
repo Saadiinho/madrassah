@@ -115,8 +115,8 @@ const Courses = () => {
                     <div className="mx-auto grid max-w-7xl items-center gap-12 px-5 py-20 sm:px-8 sm:py-24 lg:grid-cols-[1.15fr_0.85fr] lg:gap-20 lg:px-10 lg:py-28">
                         <div className="max-w-2xl">
                             <div className="mb-7 inline-flex items-center gap-3">
-                                <span className="h-px w-9 bg-[#0A5C36]" />
-                                <span className="text-xs font-semibold uppercase tracking-[0.2em] text-[#0A5C36]">
+                                <span className="h-px w-9 bg-[#2563EB]" />
+                                <span className="text-xs font-semibold uppercase tracking-[0.2em] text-[#2563EB]">
                                     Dar Al Coran · Nos formations
                                 </span>
                             </div>
@@ -126,7 +126,7 @@ const Courses = () => {
                                 className="font-display text-4xl font-medium leading-[1.12] tracking-tight text-[#1C1C1E] sm:text-5xl lg:text-6xl"
                             >
                                 Apprendre le Coran,
-                                <span className="block text-[#0A5C36]">
+                                <span className="block text-[#2563EB]">
                                     approfondir sa pratique.
                                 </span>
                             </h1>
@@ -141,14 +141,14 @@ const Courses = () => {
                             <div className="mt-9 flex flex-col gap-3 sm:flex-row">
                                 <a
                                     href="#programmes"
-                                    className="inline-flex min-h-12 items-center justify-center rounded-lg bg-[#0A5C36] px-7 py-3 text-sm font-semibold text-white transition-colors duration-200 hover:bg-[#08482B] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#0A5C36] focus-visible:ring-offset-2"
+                                    className="inline-flex min-h-12 items-center justify-center rounded-lg bg-[#2563EB] px-7 py-3 text-sm font-semibold text-white transition-colors duration-200 hover:bg-[#1D4ED8] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#2563EB] focus-visible:ring-offset-2"
                                 >
                                     Choisir mon niveau
                                 </a>
 
                                 <a
                                     href="#pedagogie"
-                                    className="inline-flex min-h-12 items-center justify-center rounded-lg border border-[#D8D8CE] bg-transparent px-7 py-3 text-sm font-semibold text-[#30332D] transition-colors duration-200 hover:border-[#0A5C36] hover:text-[#0A5C36] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#0A5C36] focus-visible:ring-offset-2"
+                                    className="inline-flex min-h-12 items-center justify-center rounded-lg border border-[#D8D8CE] bg-transparent px-7 py-3 text-sm font-semibold text-[#30332D] transition-colors duration-200 hover:border-[#2563EB] hover:text-[#2563EB] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#2563EB] focus-visible:ring-offset-2"
                                 >
                                     Découvrir notre pédagogie
                                 </a>
@@ -156,7 +156,7 @@ const Courses = () => {
 
                             <div className="mt-12 flex flex-wrap items-center gap-x-7 gap-y-4 border-t border-[#E7E4DC] pt-7">
                                 <div>
-                                    <p className="font-display text-2xl text-[#0A5C36]">
+                                    <p className="font-display text-2xl text-[#2563EB]">
                                         2
                                     </p>
                                     <p className="mt-1 text-xs text-[#777970]">
@@ -167,7 +167,7 @@ const Courses = () => {
                                 <span className="hidden h-9 w-px bg-[#E2DED4] sm:block" />
 
                                 <div>
-                                    <p className="font-display text-2xl text-[#0A5C36]">
+                                    <p className="font-display text-2xl text-[#2563EB]">
                                         1h30
                                     </p>
                                     <p className="mt-1 text-xs text-[#777970]">
@@ -178,7 +178,7 @@ const Courses = () => {
                                 <span className="hidden h-9 w-px bg-[#E2DED4] sm:block" />
 
                                 <div>
-                                    <p className="font-display text-2xl text-[#0A5C36]">
+                                    <p className="font-display text-2xl text-[#2563EB]">
                                         3
                                     </p>
                                     <p className="mt-1 text-xs text-[#777970]">
@@ -193,23 +193,23 @@ const Courses = () => {
                             <div className="relative overflow-hidden rounded-lg border border-[#E5E1D7] bg-[#EDECE4] p-5 sm:p-7">
                                 <div className="absolute right-0 top-0 h-36 w-36 rounded-bl-full border-b border-l border-[#D8D5C9]" />
 
-                                <div className="relative flex min-h-[330px] flex-col justify-between sm:min-h-[390px]">
+                                <div className="relative flex min-h-82.5 flex-col justify-between sm:min-h-97.5">
                                     <div className="flex items-center justify-between">
                                         <span className="text-xs font-semibold uppercase tracking-[0.18em] text-[#667064]">
                                             Apprendre avec régularité
                                         </span>
-                                        <span className="h-2 w-2 rounded-full bg-[#0A5C36]" />
+                                        <span className="h-2 w-2 rounded-full bg-[#2563EB]" />
                                     </div>
 
                                     <div className="py-10">
                                         <p className="font-display text-4xl leading-tight text-[#1C1C1E] sm:text-5xl">
                                             Un apprentissage
-                                            <span className="block italic text-[#0A5C36]">
+                                            <span className="block italic text-[#2563EB]">
                                                 à chaque étape.
                                             </span>
                                         </p>
 
-                                        <div className="mt-8 h-px w-16 bg-[#B7A77E]" />
+                                        <div className="mt-8 h-px w-16 bg-[#93C5FD]" />
                                     </div>
 
                                     <div className="grid grid-cols-2 gap-3">
@@ -248,7 +248,7 @@ const Courses = () => {
                     <div className="mx-auto max-w-7xl px-5 sm:px-8 lg:px-10">
                         <div className="mb-12 grid gap-5 md:grid-cols-[1fr_0.65fr] md:items-end">
                             <div>
-                                <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#0A5C36]">
+                                <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#2563EB]">
                                     Les programmes
                                 </p>
 
@@ -298,7 +298,7 @@ const Courses = () => {
                 >
                     <div className="mx-auto max-w-7xl px-5 sm:px-8 lg:px-10">
                         <div className="max-w-2xl">
-                            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#0A5C36]">
+                            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#2563EB]">
                                 Notre organisation
                             </p>
 
@@ -319,7 +319,7 @@ const Courses = () => {
 
                         <div className="mt-12 grid gap-0 border-y border-[#E5E1D7] sm:grid-cols-2 lg:grid-cols-4">
                             <div className="border-b border-[#E5E1D7] py-7 sm:border-r sm:px-6 lg:border-b-0">
-                                <span className="font-display text-3xl text-[#0A5C36]">
+                                <span className="font-display text-3xl text-[#2563EB]">
                                     01
                                 </span>
                                 <h3 className="mt-4 text-base font-semibold text-[#252822]">
@@ -332,7 +332,7 @@ const Courses = () => {
                             </div>
 
                             <div className="border-b border-[#E5E1D7] py-7 sm:px-6 lg:border-b-0 lg:border-r">
-                                <span className="font-display text-3xl text-[#0A5C36]">
+                                <span className="font-display text-3xl text-[#2563EB]">
                                     02
                                 </span>
                                 <h3 className="mt-4 text-base font-semibold text-[#252822]">
@@ -345,7 +345,7 @@ const Courses = () => {
                             </div>
 
                             <div className="border-b border-[#E5E1D7] py-7 sm:border-b-0 sm:border-r sm:px-6">
-                                <span className="font-display text-3xl text-[#0A5C36]">
+                                <span className="font-display text-3xl text-[#2563EB]">
                                     03
                                 </span>
                                 <h3 className="mt-4 text-base font-semibold text-[#252822]">
@@ -358,7 +358,7 @@ const Courses = () => {
                             </div>
 
                             <div className="py-7 sm:px-6">
-                                <span className="font-display text-3xl text-[#0A5C36]">
+                                <span className="font-display text-3xl text-[#2563EB]">
                                     04
                                 </span>
                                 <h3 className="mt-4 text-base font-semibold text-[#252822]">
@@ -373,7 +373,7 @@ const Courses = () => {
 
                         <div className="mt-10 flex flex-col gap-4 rounded-lg border border-[#E5E1D7] bg-[#F7F6F2] p-6 sm:flex-row sm:items-center sm:justify-between sm:p-8">
                             <div>
-                                <p className="text-xs font-semibold uppercase tracking-[0.16em] text-[#9A8354]">
+                                <p className="text-xs font-semibold uppercase tracking-[0.16em] text-[#2563EB]">
                                     Deux matières complémentaires
                                 </p>
                                 <h3 className="mt-2 font-display text-2xl text-[#1C1C1E]">
@@ -387,7 +387,7 @@ const Courses = () => {
 
                             <a
                                 href="#programmes"
-                                className="inline-flex shrink-0 items-center justify-center rounded-lg border border-[#0A5C36] px-5 py-3 text-sm font-semibold text-[#0A5C36] transition-colors hover:bg-[#0A5C36] hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#0A5C36] focus-visible:ring-offset-2"
+                                className="inline-flex shrink-0 items-center justify-center rounded-lg border border-[#2563EB] px-5 py-3 text-sm font-semibold text-[#2563EB] transition-colors hover:bg-[#2563EB] hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#2563EB] focus-visible:ring-offset-2"
                             >
                                 Voir les programmes
                             </a>
@@ -402,7 +402,7 @@ const Courses = () => {
                 >
                     <div className="mx-auto grid max-w-7xl gap-12 px-5 sm:px-8 lg:grid-cols-[0.7fr_1.3fr] lg:gap-24 lg:px-10">
                         <div>
-                            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#0A5C36]">
+                            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#2563EB]">
                                 Besoin de précisions ?
                             </p>
 
@@ -420,7 +420,7 @@ const Courses = () => {
 
                             <a
                                 href="/register"
-                                className="mt-7 inline-flex items-center text-sm font-semibold text-[#0A5C36] underline decoration-[#B8C8BD] underline-offset-4 transition-colors hover:text-[#08482B]"
+                                className="mt-7 inline-flex items-center text-sm font-semibold text-[#2563EB] underline decoration-[#BFDBFE] underline-offset-4 transition-colors hover:text-[#1D4ED8]"
                             >
                                 Accéder à l’inscription
                             </a>
@@ -446,7 +446,7 @@ const Courses = () => {
                                                         isOpen ? null : index,
                                                     )
                                                 }
-                                                className="flex w-full items-center justify-between gap-6 py-6 text-left focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-[#0A5C36]"
+                                                className="flex w-full items-center justify-between gap-6 py-6 text-left focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-[#2563EB]"
                                             >
                                                 <span className="text-base font-semibold leading-7 text-[#252822]">
                                                     {item.question}
@@ -454,7 +454,7 @@ const Courses = () => {
 
                                                 <span
                                                     aria-hidden="true"
-                                                    className={`flex h-8 w-8 shrink-0 items-center justify-center rounded-full border border-[#DCD9CF] text-lg text-[#0A5C36] transition-transform duration-200 ${
+                                                    className={`flex h-8 w-8 shrink-0 items-center justify-center rounded-full border border-[#DCD9CF] text-lg text-[#2563EB] transition-transform duration-200 ${
                                                         isOpen
                                                             ? 'rotate-45'
                                                             : ''
@@ -480,10 +480,10 @@ const Courses = () => {
                 </section>
 
                 {/* CTA FINAL */}
-                <section className="border-t border-[#E5E1D7] bg-[#0A3F2A]">
+                <section className="border-t border-[#E5E1D7] bg-[#1E3A8A]">
                     <div className="mx-auto flex max-w-7xl flex-col gap-8 px-5 py-16 sm:px-8 sm:py-20 lg:flex-row lg:items-center lg:justify-between lg:px-10">
                         <div className="max-w-2xl">
-                            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#D5C49A]">
+                            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#BFDBFE]">
                                 Dar Al Coran
                             </p>
 
@@ -500,7 +500,7 @@ const Courses = () => {
 
                         <a
                             href="/register"
-                            className="inline-flex min-h-12 shrink-0 items-center justify-center rounded-lg bg-[#F1E9D8] px-7 py-3 text-sm font-semibold text-[#173B2A] transition-colors hover:bg-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-[#0A3F2A]"
+                            className="inline-flex min-h-12 shrink-0 items-center justify-center rounded-lg bg-[#DBEAFE] px-7 py-3 text-sm font-semibold text-[#1E3A8A] transition-colors hover:bg-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-[#1E3A8A]"
                         >
                             Commencer mon inscription
                         </a>

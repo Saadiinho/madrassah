@@ -6,11 +6,11 @@ interface FeatureCardProps {
 
 const colorVariants = {
     purple: {
-        background: 'bg-purple-50/70',
-        border: 'border-purple-100',
-        icon: 'bg-purple-100 text-purple-600',
-        hover: 'hover:border-purple-300 hover:shadow-purple-100',
-        accent: 'bg-purple-500',
+        background: 'bg-blue-50/70',
+        border: 'border-blue-100',
+        icon: 'bg-blue-100 text-blue-600',
+        hover: 'hover:border-blue-300 hover:shadow-blue-100',
+        accent: 'bg-blue-500',
     },
 
     blue: {
@@ -22,35 +22,35 @@ const colorVariants = {
     },
 
     orange: {
-        background: 'bg-orange-50/70',
-        border: 'border-orange-100',
-        icon: 'bg-orange-100 text-orange-600',
-        hover: 'hover:border-orange-300 hover:shadow-orange-100',
-        accent: 'bg-orange-500',
+        background: 'bg-blue-50/70',
+        border: 'border-blue-100',
+        icon: 'bg-blue-100 text-blue-600',
+        hover: 'hover:border-blue-300 hover:shadow-blue-100',
+        accent: 'bg-blue-500',
     },
 
     green: {
-        background: 'bg-emerald-50/70',
-        border: 'border-emerald-100',
-        icon: 'bg-emerald-100 text-emerald-600',
-        hover: 'hover:border-emerald-300 hover:shadow-emerald-100',
-        accent: 'bg-emerald-500',
+        background: 'bg-blue-50/70',
+        border: 'border-blue-100',
+        icon: 'bg-blue-100 text-blue-600',
+        hover: 'hover:border-blue-300 hover:shadow-blue-100',
+        accent: 'bg-blue-500',
     },
 
     pink: {
-        background: 'bg-pink-50/70',
-        border: 'border-pink-100',
-        icon: 'bg-pink-100 text-pink-600',
-        hover: 'hover:border-pink-300 hover:shadow-pink-100',
-        accent: 'bg-pink-500',
+        background: 'bg-blue-50/70',
+        border: 'border-blue-100',
+        icon: 'bg-blue-100 text-blue-600',
+        hover: 'hover:border-blue-300 hover:shadow-blue-100',
+        accent: 'bg-blue-500',
     },
 
     indigo: {
-        background: 'bg-indigo-50/70',
-        border: 'border-indigo-100',
-        icon: 'bg-indigo-100 text-indigo-600',
-        hover: 'hover:border-indigo-300 hover:shadow-indigo-100',
-        accent: 'bg-indigo-500',
+        background: 'bg-blue-50/70',
+        border: 'border-blue-100',
+        icon: 'bg-blue-100 text-blue-600',
+        hover: 'hover:border-blue-300 hover:shadow-blue-100',
+        accent: 'bg-blue-500',
     },
 }
 

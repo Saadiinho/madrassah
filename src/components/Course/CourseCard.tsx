@@ -14,7 +14,7 @@ interface CourseCardProps {
 
 const CourseCard = ({ course }: CourseCardProps) => {
     return (
-        <article className="group flex h-full flex-col overflow-hidden rounded-lg border border-[#E3E0D7] bg-[#FBFBFA] transition-all duration-300 hover:-translate-y-1 hover:border-[#A9BBAE] focus-within:border-[#0A5C36]">
+        <article className="group flex h-full flex-col overflow-hidden rounded-lg border border-[#E3E0D7] bg-[#FBFBFA] transition-all duration-300 hover:-translate-y-1 hover:border-[#93C5FD] focus-within:border-[#2563EB]">
             {/* Image */}
             <div className="relative aspect-[16/10] overflow-hidden bg-[#EDECE4]">
                 <img
@@ -28,7 +28,7 @@ const CourseCard = ({ course }: CourseCardProps) => {
                 />
 
                 <div className="absolute left-4 top-4">
-                    <span className="inline-flex items-center rounded-md border border-[#E7E0CF] bg-[#F7F1E4] px-3 py-1.5 text-xs font-semibold text-[#78623B]">
+                    <span className="inline-flex items-center rounded-md border border-[#E7E0CF] bg-[#F7F1E4] px-3 py-1.5 text-xs font-semibold text-[#1D4ED8]">
                         {course.level}
                     </span>
                 </div>
@@ -38,13 +38,13 @@ const CourseCard = ({ course }: CourseCardProps) => {
             <div className="flex flex-1 flex-col p-5 sm:p-6">
                 <div>
                     <div className="flex items-start justify-between gap-3">
-                        <h3 className="font-display text-2xl font-medium leading-tight text-[#1C1C1E] transition-colors group-hover:text-[#0A5C36]">
+                        <h3 className="font-display text-2xl font-medium leading-tight text-[#1C1C1E] transition-colors group-hover:text-[#2563EB]">
                             {course.title}
                         </h3>
 
                         <span
                             aria-hidden="true"
-                            className="mt-1 text-[#9A8354] transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1"
+                            className="mt-1 text-[#2563EB] transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1"
                         >
                             <ArrowUpRight size={19} strokeWidth={1.5} />
                         </span>
@@ -85,7 +85,7 @@ const CourseCard = ({ course }: CourseCardProps) => {
                     <div className="mb-3 flex items-center gap-2">
                         <BookOpen
                             size={15}
-                            className="text-[#0A5C36]"
+                            className="text-[#2563EB]"
                             strokeWidth={1.7}
                         />
 
@@ -98,7 +98,7 @@ const CourseCard = ({ course }: CourseCardProps) => {
                         {course.subjects.map((subject) => (
                             <span
                                 key={subject}
-                                className="rounded-md border border-[#DDE5DE] bg-[#F0F4F0] px-3 py-1.5 text-xs font-medium text-[#315B43]"
+                                className="rounded-md border border-[#DBEAFE] bg-[#EFF6FF] px-3 py-1.5 text-xs font-medium text-[#1D4ED8]"
                             >
                                 {subject}
                             </span>
@@ -111,7 +111,7 @@ const CourseCard = ({ course }: CourseCardProps) => {
                     <div className="mb-4 flex items-center gap-2">
                         <Users
                             size={16}
-                            className="text-[#0A5C36]"
+                            className="text-[#2563EB]"
                             strokeWidth={1.7}
                         />
 
@@ -124,14 +124,14 @@ const CourseCard = ({ course }: CourseCardProps) => {
                         {course.groups.map((group) => (
                             <div
                                 key={group.id}
-                                className="rounded-md border border-[#E7E4DC] bg-[#F7F6F2] p-4 transition-colors duration-200 hover:border-[#C8D5CA]"
+                                className="rounded-md border border-[#E7E4DC] bg-[#F7F6F2] p-4 transition-colors duration-200 hover:border-[#BFDBFE]"
                             >
                                 <div className="flex flex-wrap items-center justify-between gap-2">
                                     <p className="text-sm font-semibold text-[#30332D]">
                                         {group.name}
                                     </p>
 
-                                    <span className="inline-flex items-center gap-1.5 rounded-full bg-[#EAF1EA] px-2.5 py-1 text-[11px] font-semibold text-[#315B43]">
+                                    <span className="inline-flex items-center gap-1.5 rounded-full bg-[#DBEAFE] px-2.5 py-1 text-[11px] font-semibold text-[#1D4ED8]">
                                         <span
                                             aria-hidden="true"
                                             className="h-1.5 w-1.5 rounded-full bg-[#3C8053]"
@@ -148,7 +148,7 @@ const CourseCard = ({ course }: CourseCardProps) => {
                                         >
                                             <Clock3
                                                 size={14}
-                                                className="mt-0.5 shrink-0 text-[#9A8354]"
+                                                className="mt-0.5 shrink-0 text-[#2563EB]"
                                                 strokeWidth={1.7}
                                             />
 

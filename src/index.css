@@ -3,6 +3,9 @@
 @import "tailwindcss";
 
 :root {
+  --color-primary: #2563EB;
+  --color-primary-hover: #1D4ED8;
+  --color-page: #F7F6F2;
   font-family: 'Inter', sans-serif;
   color: #1C1C1E;
   background: #F7F6F2;
@@ -13,6 +16,13 @@
 }
 
 .font-display {
+  font-family: 'Playfair Display', serif;
+}
+
+h1,
+h2,
+h3,
+h4 {
   font-family: 'Playfair Display', serif;
 }
 
@@ -27,7 +37,7 @@ body {
 
 ::selection {
   color: #FFFFFF;
-  background: #0A5C36;
+  background: var(--color-primary);
 }
 
 :focus-visible {

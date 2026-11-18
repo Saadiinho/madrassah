@@ -21,7 +21,7 @@ const Button = ({
 
     const variants = {
         primary:
-            'bg-linear-to-r from-blue-600 to-violet-600 text-white shadow-md shadow-blue-500/20 hover:-translate-y-0.5 hover:shadow-lg hover:shadow-blue-500/30',
+            'bg-linear-to-r from-blue-600 to-blue-600 text-white shadow-md shadow-blue-500/20 hover:-translate-y-0.5 hover:shadow-lg hover:shadow-blue-500/30',
 
         secondary:
             'bg-white text-blue-600 shadow-md shadow-black/10 hover:-translate-y-0.5 hover:bg-slate-50 hover:shadow-lg',

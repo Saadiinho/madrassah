@@ -40,7 +40,7 @@ const Register = () => {
                         aria-hidden="true"
                     >
                         <div className="absolute -left-40 -top-40 h-80 w-80 rounded-full bg-blue-400/10 blur-3xl" />
-                        <div className="absolute -bottom-40 -right-40 h-80 w-80 rounded-full bg-violet-400/10 blur-3xl" />
+                        <div className="absolute -bottom-40 -right-40 h-80 w-80 rounded-full bg-blue-400/10 blur-3xl" />
                     </div>
 
                     <div className="relative mx-auto max-w-4xl px-4 py-16 text-center sm:px-6 sm:py-20 lg:py-24">

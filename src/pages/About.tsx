@@ -76,7 +76,7 @@ const About = () => {
             title: 'Niveau 2 — Adolescents',
             description:
                 'Un programme destiné aux adolescents pour approfondir leur apprentissage du Coran et développer leurs connaissances en jurisprudence.',
-            color: 'bg-violet-50 text-violet-600',
+            color: 'bg-blue-50 text-blue-600',
         },
         {
             icon: UserRound,
@@ -103,7 +103,7 @@ const About = () => {
                         className="pointer-events-none absolute inset-0"
                     >
                         <div className="absolute -left-40 -top-40 h-80 w-80 rounded-full bg-blue-400/10 blur-3xl" />
-                        <div className="absolute -bottom-40 -right-40 h-80 w-80 rounded-full bg-violet-400/10 blur-3xl" />
+                        <div className="absolute -bottom-40 -right-40 h-80 w-80 rounded-full bg-blue-400/10 blur-3xl" />
                     </div>
 
                     <div className="relative mx-auto max-w-7xl px-4 py-20 sm:px-6 sm:py-24 lg:px-8 lg:py-32">
@@ -119,7 +119,7 @@ const About = () => {
                                 className="mt-6 text-4xl font-bold tracking-tight text-slate-900 sm:text-5xl lg:text-6xl"
                             >
                                 Apprendre le Coran et transmettre son savoir
-                                <span className="mt-3 block bg-linear-to-r from-blue-600 to-violet-600 bg-clip-text text-transparent">
+                                <span className="mt-3 block bg-linear-to-r from-blue-600 to-blue-600 bg-clip-text text-transparent">
                                     Une mission, une vocation
                                 </span>
                             </h1>
@@ -162,7 +162,7 @@ const About = () => {
                                 </div>
 
                                 <div className="flex items-center gap-2 text-sm font-medium text-slate-600">
-                                    <Users size={19} className="text-violet-600" />
+                                    <Users size={19} className="text-blue-600" />
                                     Trois niveaux
                                 </div>
 
@@ -423,8 +423,8 @@ const About = () => {
                                 </p>
                             </article>
 
-                            <article className="rounded-2xl border border-slate-200 bg-slate-50 p-8 text-center transition-all hover:border-violet-200 hover:shadow-lg">
-                                <div className="mx-auto flex h-14 w-14 items-center justify-center rounded-2xl bg-violet-50 text-violet-600">
+                            <article className="rounded-2xl border border-slate-200 bg-slate-50 p-8 text-center transition-all hover:border-blue-200 hover:shadow-lg">
+                                <div className="mx-auto flex h-14 w-14 items-center justify-center rounded-2xl bg-blue-50 text-blue-600">
                                     <Clock3 size={27} />
                                 </div>
 
