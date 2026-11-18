@@ -1,13 +1,13 @@
 export type QuranKnowledgeLevel =
-    | 'Aucune'
-    | 'Débutant'
-    | 'Intermédiaire'
-    | 'Avancé'
+    | 'aucune'
+    | 'debutant'
+    | 'intermediaire'
+    | 'avance'
 
 export type CourseLevel =
-    | 'Enfant'
-    | 'Adolescent'
-    | 'Adulte'
+    | 'enfant'
+    | 'adolescent'
+    | 'adulte'
 
 export interface RegistrationFormData {
     lastName: string
