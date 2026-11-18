@@ -1,11 +1,11 @@
 import type { Course } from '../../types/course'
 import Button from '../Button'
 import {
-    Clock,
     CalendarDays,
+    Clock3,
     Users,
     BookOpen,
-    ChevronRight,
+    ArrowUpRight,
 } from 'lucide-react'
 
 interface CourseCardProps {
@@ -14,187 +14,165 @@ interface CourseCardProps {
 
 const CourseCard = ({ course }: CourseCardProps) => {
     return (
-        <article className="group flex h-full flex-col overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-violet-200 hover:shadow-xl hover:shadow-violet-950/5">
-
+        <article className="group flex h-full flex-col overflow-hidden rounded-lg border border-[#E3E0D7] bg-[#FBFBFA] transition-all duration-300 hover:-translate-y-1 hover:border-[#A9BBAE] focus-within:border-[#0A5C36]">
             {/* Image */}
-            <div className="relative aspect-16/10 overflow-hidden bg-slate-100">
-
+            <div className="relative aspect-[16/10] overflow-hidden bg-[#EDECE4]">
                 <img
                     src={course.image}
-                    alt={`Formation ${course.title} chez Dar Al Coran`}
+                    alt={`Cours de Coran et de jurisprudence pour ${course.level.toLowerCase()}s`}
                     loading="lazy"
                     decoding="async"
-                    className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                    width="640"
+                    height="400"
+                    className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-[1.03]"
                 />
 
-                {/* Level badge */}
                 <div className="absolute left-4 top-4">
-                    <span className="inline-flex items-center rounded-full border border-white/70 bg-white/95 px-3 py-1.5 text-xs font-bold text-violet-700 shadow-sm backdrop-blur-sm">
+                    <span className="inline-flex items-center rounded-md border border-[#E7E0CF] bg-[#F7F1E4] px-3 py-1.5 text-xs font-semibold text-[#78623B]">
                         {course.level}
                     </span>
                 </div>
-
             </div>
 
             {/* Content */}
             <div className="flex flex-1 flex-col p-5 sm:p-6">
-
-                {/* Title and description */}
                 <div>
+                    <div className="flex items-start justify-between gap-3">
+                        <h3 className="font-display text-2xl font-medium leading-tight text-[#1C1C1E] transition-colors group-hover:text-[#0A5C36]">
+                            {course.title}
+                        </h3>
 
-                    <h3 className="text-xl font-bold leading-snug text-slate-900 transition-colors group-hover:text-violet-700">
-                        {course.title}
-                    </h3>
+                        <span
+                            aria-hidden="true"
+                            className="mt-1 text-[#9A8354] transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1"
+                        >
+                            <ArrowUpRight size={19} strokeWidth={1.5} />
+                        </span>
+                    </div>
 
-                    <p className="mt-3 text-sm leading-7 text-slate-600">
+                    <p className="mt-4 text-sm leading-7 text-[#686B63]">
                         {course.description}
                     </p>
-
                 </div>
 
-                {/* Course information */}
-                <div className="mt-5 grid grid-cols-2 gap-3">
-
-                    <div className="rounded-xl bg-slate-50 p-3">
-
-                        <div className="flex items-center gap-2 text-slate-400">
-                            <CalendarDays size={15} />
-                            <span className="text-xs font-medium">
-                                Fréquence
-                            </span>
+                {/* Metadata */}
+                <div className="mt-6 grid grid-cols-2 border-y border-[#E9E6DE] py-4">
+                    <div className="pr-3">
+                        <div className="flex items-center gap-2 text-[#85877F]">
+                            <CalendarDays size={15} strokeWidth={1.7} />
+                            <span className="text-xs">Fréquence</span>
                         </div>
 
-                        <p className="mt-2 text-sm font-bold text-slate-900">
+                        <p className="mt-2 text-sm font-semibold text-[#30332D]">
                             {course.lessons} fois / semaine
                         </p>
-
                     </div>
 
-                    <div className="rounded-xl bg-slate-50 p-3">
-
-                        <div className="flex items-center gap-2 text-slate-400">
-                            <Clock size={15} />
-                            <span className="text-xs font-medium">
-                                Durée
-                            </span>
+                    <div className="border-l border-[#E9E6DE] pl-4">
+                        <div className="flex items-center gap-2 text-[#85877F]">
+                            <Clock3 size={15} strokeWidth={1.7} />
+                            <span className="text-xs">Durée</span>
                         </div>
 
-                        <p className="mt-2 text-sm font-bold text-slate-900">
-                            {course.duration}
+                        <p className="mt-2 text-sm font-semibold text-[#30332D]">
+                            {course.duration} / séance
                         </p>
-
                     </div>
-
                 </div>
 
                 {/* Subjects */}
                 <div className="mt-5">
-
                     <div className="mb-3 flex items-center gap-2">
-                        <BookOpen size={15} className="text-violet-600" />
+                        <BookOpen
+                            size={15}
+                            className="text-[#0A5C36]"
+                            strokeWidth={1.7}
+                        />
 
-                        <span className="text-xs font-bold uppercase tracking-wider text-slate-500">
+                        <span className="text-[11px] font-semibold uppercase tracking-[0.14em] text-[#777970]">
                             Matières enseignées
                         </span>
                     </div>
 
                     <div className="flex flex-wrap gap-2">
-
                         {course.subjects.map((subject) => (
                             <span
                                 key={subject}
-                                className="rounded-lg border border-violet-100 bg-violet-50 px-3 py-1.5 text-xs font-semibold text-violet-700"
+                                className="rounded-md border border-[#DDE5DE] bg-[#F0F4F0] px-3 py-1.5 text-xs font-medium text-[#315B43]"
                             >
                                 {subject}
                             </span>
                         ))}
-
                     </div>
-
                 </div>
 
-                {/* Groups and schedules */}
-                <div className="mt-6 flex-1 border-t border-slate-100 pt-5">
-
+                {/* Groups */}
+                <div className="mt-6 flex-1 border-t border-[#E9E6DE] pt-5">
                     <div className="mb-4 flex items-center gap-2">
-                        <Users size={16} className="text-violet-600" />
+                        <Users
+                            size={16}
+                            className="text-[#0A5C36]"
+                            strokeWidth={1.7}
+                        />
 
-                        <h4 className="text-xs font-bold uppercase tracking-wider text-slate-500">
+                        <h4 className="text-[11px] font-semibold uppercase tracking-[0.14em] text-[#777970]">
                             Groupes et horaires
                         </h4>
                     </div>
 
                     <div className="space-y-3">
-
                         {course.groups.map((group) => (
                             <div
                                 key={group.id}
-                                className="rounded-xl border border-slate-100 bg-slate-50/80 p-4 transition-colors hover:border-violet-100 hover:bg-violet-50/30"
+                                className="rounded-md border border-[#E7E4DC] bg-[#F7F6F2] p-4 transition-colors duration-200 hover:border-[#C8D5CA]"
                             >
-
-                                {/* Group name and availability */}
-                                <div className="flex items-center justify-between gap-2">
-
-                                    <p className="text-sm font-bold text-slate-900">
+                                <div className="flex flex-wrap items-center justify-between gap-2">
+                                    <p className="text-sm font-semibold text-[#30332D]">
                                         {group.name}
                                     </p>
 
-                                    <span className="inline-flex shrink-0 items-center gap-1.5 rounded-full bg-emerald-50 px-2.5 py-1 text-xs font-semibold text-emerald-700">
-
-                                        <span className="h-1.5 w-1.5 rounded-full bg-emerald-500" />
-
-                                        {group.availableSeats} places
-
+                                    <span className="inline-flex items-center gap-1.5 rounded-full bg-[#EAF1EA] px-2.5 py-1 text-[11px] font-semibold text-[#315B43]">
+                                        <span
+                                            aria-hidden="true"
+                                            className="h-1.5 w-1.5 rounded-full bg-[#3C8053]"
+                                        />
+                                        {group.availableSeats} places max.
                                     </span>
-
                                 </div>
 
-                                {/* Schedule */}
                                 <div className="mt-3 space-y-2">
-
                                     {group.schedule.map((schedule) => (
                                         <div
                                             key={schedule}
-                                            className="flex items-center gap-2 text-sm text-slate-600"
+                                            className="flex items-start gap-2 text-xs leading-5 text-[#686B63]"
                                         >
-                                            <Clock
+                                            <Clock3
                                                 size={14}
-                                                className="shrink-0 text-violet-500"
+                                                className="mt-0.5 shrink-0 text-[#9A8354]"
+                                                strokeWidth={1.7}
                                             />
 
                                             <span>{schedule}</span>
                                         </div>
                                     ))}
-
                                 </div>
-
                             </div>
                         ))}
-
                     </div>
-
                 </div>
 
                 {/* CTA */}
-                <div className="mt-6 border-t border-slate-100 pt-5">
-
+                <div className="mt-6 border-t border-[#E9E6DE] pt-5">
                     <Button
                         href={`/courses/${course.id}`}
                         variant="outline"
-                        className="group/button flex w-full items-center justify-center gap-2"
+                        className="flex w-full items-center justify-center gap-2"
                     >
                         Découvrir le programme
-
-                        <ChevronRight
-                            size={16}
-                            className="transition-transform duration-200 group-hover/button:translate-x-1"
-                        />
+                        <ArrowUpRight size={16} strokeWidth={1.7} />
                     </Button>
-
                 </div>
-
             </div>
-
         </article>
     )
 }
