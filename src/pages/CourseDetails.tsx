@@ -53,7 +53,7 @@ const CourseDetails = () => {
             <main className="bg-slate-50">
 
             {/* Hero du cours */}
-            <section className="relative overflow-hidden bg-white">
+            <section className="relative overflow-hidden border-b border-blue-100 bg-linear-to-br from-blue-50 via-white to-slate-50">
                 <div className="pointer-events-none absolute inset-0">
                     <div className="absolute -left-40 -top-40 h-80 w-80 rounded-full bg-blue-400/10 blur-3xl" />
                     <div className="absolute -bottom-40 -right-40 h-80 w-80 rounded-full bg-blue-400/10 blur-3xl" />
@@ -151,7 +151,11 @@ const CourseDetails = () => {
             </section>
 
             {/* Programme */}
-            <section className="py-16 sm:py-20 lg:py-24">
+            <section className="relative overflow-hidden bg-white py-16 sm:py-20 lg:py-24">
+                <div
+                    aria-hidden="true"
+                    className="pointer-events-none absolute -left-36 top-12 h-72 w-72 rounded-full bg-blue-100/60 blur-3xl"
+                />
                 <div className="mx-auto max-w-7xl px-4 sm:px-6">
 
                     <div className="max-w-2xl">
@@ -175,7 +179,7 @@ const CourseDetails = () => {
                         {course.subjects.map((subject, index) => (
                             <div
                                 key={subject}
-                                className="flex gap-4 rounded-2xl border border-slate-200 bg-white p-6 shadow-sm"
+                                className="flex gap-4 rounded-2xl border border-blue-100 bg-linear-to-br from-white to-blue-50/70 p-6 shadow-sm shadow-blue-900/5 transition-shadow hover:shadow-md hover:shadow-blue-900/10"
                             >
                                 <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-blue-50 text-sm font-bold text-blue-600">
                                     {String(index + 1).padStart(2, '0')}
@@ -200,7 +204,11 @@ const CourseDetails = () => {
             </section>
 
             {/* Horaires */}
-            <section className="bg-white py-16 sm:py-20 lg:py-24">
+            <section className="relative overflow-hidden border-y border-blue-100 bg-linear-to-br from-blue-50/80 via-white to-blue-50/40 py-16 sm:py-20 lg:py-24">
+                <div
+                    aria-hidden="true"
+                    className="pointer-events-none absolute -right-36 bottom-0 h-80 w-80 rounded-full bg-blue-200/30 blur-3xl"
+                />
                 <div className="mx-auto max-w-7xl px-4 sm:px-6">
 
                     <div className="grid gap-12 lg:grid-cols-2 lg:gap-20">
@@ -228,7 +236,7 @@ const CourseDetails = () => {
                             {course.groups.map((group) => (
                                 <div
                                     key={group.id}
-                                    className="rounded-2xl border border-slate-200 bg-slate-50 p-6"
+                                    className="rounded-2xl border border-blue-100 bg-white/90 p-6 shadow-lg shadow-blue-900/5 transition-transform hover:-translate-y-0.5"
                                 >
                                     <div className="flex items-center justify-between gap-4">
                                         <h3 className="font-semibold text-slate-900">
@@ -266,10 +274,16 @@ const CourseDetails = () => {
             </section>
 
             {/* CTA */}
-            <section className="py-16 sm:py-20">
+            <section className="relative overflow-hidden bg-white py-16 sm:py-20">
+                <div
+                    aria-hidden="true"
+                    className="pointer-events-none absolute inset-x-0 bottom-0 h-40 bg-linear-to-t from-blue-50/70 to-transparent"
+                />
                 <div className="mx-auto max-w-4xl px-4 text-center sm:px-6">
 
-                    <div className="rounded-3xl bg-linear-to-br from-blue-600 to-blue-600 px-6 py-12 shadow-xl sm:px-12">
+                    <div className="relative overflow-hidden rounded-3xl bg-linear-to-br from-blue-700 via-blue-600 to-indigo-600 px-6 py-12 shadow-2xl shadow-blue-900/20 sm:px-12 sm:py-14">
+                        <div aria-hidden="true" className="pointer-events-none absolute -right-12 -top-24 h-64 w-64 rounded-full border border-white/10" />
+                        <div aria-hidden="true" className="pointer-events-none absolute -bottom-32 -left-12 h-72 w-72 rounded-full border border-white/10" />
 
                         <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
                             Prêt à commencer votre apprentissage ?
